@@ -1,0 +1,215 @@
+body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+a{ text-decoration:none; }
+.heading {
+
+	font-family: Verdana, Arial;
+
+	font-size: 15px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+.text {
+
+	font-family: Verdana, Arial;
+
+	font-size: 11px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+.logintext {
+
+	font-family: Verdana, Arial;
+
+	font-size: 10px;
+
+	color: #065523;
+
+	text-decoration: none;
+
+}
+
+.toplink {
+
+	font-family: "Trebuchet MS";
+
+	font-size: 18px;
+
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+	font-weight: normal;
+
+}
+
+.bdrNav{ width:90%; margin:10px; }
+.bdrNav th{ background-color:#990000; color:#FFFFFF; }
+.bdrNav td{ margin:5px; border:1px solid #FF0000; color:#990000; padding:0; }
+.bdrNav td a{ display:block; color:#990000; }
+.bdrNav td a:hover{ background-color:#990000; color:#FFFFCC; }
+
+.bottomlinks {
+
+	font-family: Verdana, Arial;
+
+	font-size: 10px;
+
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+}
+
+.linktext {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+.linktext1 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #ffffff;
+
+	text-decoration: none;
+
+}
+
+.bdr {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+	border: 1px solid #999999;
+
+}
+
+.bdr1 {
+
+	border: 1px solid #666666;
+
+}
+
+.logintext {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #08421D;
+
+	text-decoration: none;
+
+}
+
+.newlogintext {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 18px;
+
+	color: #08421D;
+
+	text-decoration: none;
+
+}
+
+.toplinktext{ font-size:14px; font-weight:bold; color:#990000; }
+
+table.listing{ border-collapse:collapse; }
+table.listing th{ background-color:#FF3300; color:#FFFFFF; padding:5px; border:1px dashed #FF6600; }
+table.listing td{ padding:5px; border:1px dashed #FF6600; color:#990000; }
+table.listing td strong{ color:#3366CC; }
+
+table.listing2{ border-collapse:collapse; }
+table.listing2 th{ background-color:#CCCCCC; color:#FFFFFF; padding:5px; border:1px dashed #c0c0c0; }
+table.listing2 td{ padding:5px; border:1px dashed #c0c0c0; color:#333333; }
+table.listing2 td strong{ color:#336699; }
+
+
+#MenuTable tr td {
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+#MenuTable tr td a{ 
+	text-decoration:none;  
+	color:#FFFFFF;
+}
+
+#MenuTable tr td a:hover{
+	text-decoration: underline; 
+	color:#FFFFFF;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 10px;
+  height:10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
