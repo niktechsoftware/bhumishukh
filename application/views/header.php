@@ -66,7 +66,7 @@
                 <td><a href="#">OUR PROJECTS</a></td>
                 <td><a href="#">NEWS & EVENTS</a></td>
                 <td><a href="#">CONTACT US</a></td>
-           <td><a href="<?php  echo base_url();?>index.php/welcome/login">Login</a></td>
+           <td><a href="<?php  echo base_url();?>admin/">Login</a></td>
               </tr>
             </table>
         </td>
