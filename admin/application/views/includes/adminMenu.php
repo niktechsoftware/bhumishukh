@@ -6,14 +6,31 @@
               
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="briefcase"></i><span>Configuration</span></a>
+              <a href="#" class="nav-link has-dropdown"><i data-feather="settings"></i><span>Configuration</span></a>
               <ul class="dropdown-menu">
-					<li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/category/">Plan </a></li>
-					<li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/subcategory/">Clossing</a></li>
+					<li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/commisionChart">Edit Commision Chart </a></li>
+					<li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/promotionChart">Edit Promotion Chart</a></li>
 					
                  </ul>
             </li>
-              <li class="dropdown">
+             <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="users"></i><span>Agent</span></a>
+              <ul class="dropdown-menu">
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agent_registration">Registration Form </a></li>
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agentCheckId">KYC Info</a></li>
+            <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agentList">Agent List</a></li>
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agent_profile">Agent  Profile</a></li>
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/checkBusiness">Check Business</a></li>
+                 </ul>
+            </li>
+             <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="user-plus"></i><span>Customer</span></a>
+              <ul class="dropdown-menu">
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/customer/addCust">Add Customer</a></li>
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/customer/customerList">Search Customer</a></li>
+           </ul>
+            </li>
+             <!-- <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i data-feather="briefcase"></i><span>Agent </span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/billEntry/">View List</a></li>
@@ -44,25 +61,25 @@
                 <li><a class="nav-link" href="#">Agent Wise</a></li>
                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/Bill_controller/sBillHistory">Customer Wise</a></li>
               </ul>
-            </li>
+            </li>-->
              <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i data-feather="mail"></i><span>Daybook</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/daybookController/dBookDetail">Daybook Detail</a></li>
+                <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/dBookDetail">Daybook Detail</a></li>
                
               </ul>
             </li>
-			 <li class="dropdown">
+		 	 <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i data-feather="copy"></i><span>SMS Account</span></a>
               <ul class="dropdown-menu">
                
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/daybookController/daybook/2">Notice</a></li>
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/daybookController/daybookTrans/2">Contact Us</a></li>
-                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/daybookController/daybookTrans/2">Gallery</a></li>
-                <li><a class="nav-link" href="card.html">Marquee Content</a></li>
+                <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/notice/1">Notice</a></li>
+                <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/notice/2">Agent</a></li>
+                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/notice/3">Agent and Customer</a></li>
+                
               </ul>
             </li>
-            
+            <!--
      <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i data-feather="copy"></i><span>Website</span></a>
               <ul class="dropdown-menu">
@@ -72,9 +89,5 @@
                  <li><a class="nav-link" href="<?php echo base_url();?>index.php/daybookController/daybookTrans/2">Gallery</a></li>
                 <li><a class="nav-link" href="card.html">Marquee Content</a></li>
               </ul>
-            </li>
-		<li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="copy"></i><span>Logout</span></a>
-             
-            </li>
+            </li>-->
           </ul>

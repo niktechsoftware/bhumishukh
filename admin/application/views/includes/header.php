@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Chaanan Dashboard</title>
+  <title>Bhoomisukh Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/app.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bundles/jqvmap/dist/jqvmap.min.css">

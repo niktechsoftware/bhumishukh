@@ -30,7 +30,7 @@ class Clogin extends CI_Controller{
 		$data['title'] = 'UMPL Customer Dashboard';
 		$data['headerCss'] = 'headerCss/nullCss';
 		$data['footerJs'] = 'footerJs/dashboardJs';
-		$data['mainContent'] = 'customer/cdashboard';
+		$data['mainContent'] = 'cDashboard';
 		$this->load->view("includes/mainContent", $data);
 	}
 	public function customer_reg(){

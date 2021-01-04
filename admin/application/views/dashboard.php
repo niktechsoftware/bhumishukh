@@ -8,7 +8,7 @@
                   <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
                   <a href="#">
                   <div class="card-content text-white">
-                    <h4 class="card-title">Form 3</h4>
+                    <h4 class="card-title">Daybook</h4>
                     <span>
                   
                     </span>
@@ -28,7 +28,7 @@
                   <div class="card-icon card-icon-large"><i class="fa fa-briefcase"></i></div>
                   <a href="#">
                   <div class="card-content text-white">
-                    <h4 class="card-title"> Membership form</h4>
+                    <h4 class="card-title">Inactive List</h4>
                     <span> 
                     
                     
@@ -49,7 +49,7 @@
                   <div class="card-icon card-icon-large"><i class="fa fa-globe"></i></div>
                   <a href="">
                   <div class="card-content text-white">
-                    <h4 class="card-title"> Contact us </h4>
+                    <h4 class="card-title">Active List</h4>
                     <span>
                     
                     </span>
@@ -69,7 +69,7 @@
                   <div class="card-icon card-icon-large"><i class="fa fa-money-bill-alt"></i></div>
                   <a href="#">
                   <div class="card-content text-white">
-                    <h4 class="card-title">Gallery</h4>
+                    <h4 class="card-title">Contact Us</h4>
                   
                     <div class="row">
                     <div class="col-md-6">

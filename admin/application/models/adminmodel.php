@@ -1,52 +1,73 @@
 <?php 
     class Adminmodel extends CI_Model{
     	
-    	function getEmployee(){
-    		$record = $this->db->query("select * from employee_info where status =1");
-    		//print_r($record->result());
-    		//exit();
-    		return $record;
-    	}
-function getrecord(){
-        	$record = $this->db->get("general_settings");
-        	return $record;
-	     	}
-	     	
-	 	function updateAdminPassword($data){
-		//$this->db->where("school_code",$this->session->userdata("school_code"));
-		if($this->db->update("general_settings",$data)){
-			return true;
-		}
-		else{
-			return false;
-		}
-	}
-	
-	function treedata($tblnm){
-	    return $this->db->get($tblnm);
-	    
-	}
-   
-   function alldata(){
-		$reg=$this->db->get("customer_complain");
-		return $reg;
-	}
-	public function update_admin_profile($data){
-		
-		$result = $this->db->update("general_settings",$data);
-		if($result):
-			return true;
-		endif;
-	}
-	
-public function addemployee($data){
-		$info=$this->db->insert("employee_info",$data);
-		return $info;
-	}
-	public function getinfo(){
-		$info=$this->db->get("employee_info");
-		return $info;
-	}
+    	 function ag_max($tblnm){
+            $this->db->select_max('id');
+						$this->db->from($tblnm);
+						$maxid=$this->db->get();
+						if($maxid->num_rows()>0){
+			      	return $maxid->row()->id;
+						}else{
+							return 1; 
+						}
+        }
+
+ function getAgrecord(){
+        	$agrecord=$this->db->get('agent_info');
+        	return $agrecord;
+        }
+        function getrecord(){
+        	$crecord=$this->db->get('general_settings');
+        	return $crecord;
+        }
+
+    function getState(){
+	//$school_code = $this->session->userdata("school_code");
+	$result = $this->db->query("select DISTINCT state FROM city_state ORDER BY state");
+	return $result;
+}
+
+function getCity($state){
+	//$school_code = $this->session->userdata("school_code");
+	$result = $this->db->query("select DISTINCT city FROM city_state WHERE state = '$state' ORDER BY city");
+	return $result;
+}
+
+function getArea($state,$city){
+	//$school_code = $this->session->userdata("school_code");
+	$result = $this->db->query("select DISTINCT area FROM city_state WHERE city = '$city' AND state = '$state'  ORDER BY area");
+	return $result;
+}
+
+
+function getPin($state,$city,$area){
+	//$school_code = $this->session->userdata("school_code");
+	$result = $this->db->query("select DISTINCT pin FROM city_state WHERE city = '$city' AND state = '$state' AND area = '$area'  ORDER BY area LIMIT 1");
+	return $result;
+}
+
+function addAgent($data){
+	$this->db->insert("agent_info",$data);
+	return true;
+
+}
+function updateDocInfo($data){
+	$this->db->insert("agent_doc_info",$data);
+	return true;
+
+}
+function updateAgent($data,$uri){
+	$this->db->where("id",$uri);
+	$result =  $this->db->update('agent_info',$data);
+	return $result;
+}
+function deleteAgent($reg_id){
+	$this->db->where("id",$reg_id);
+	$res=$this->db->delete("agent_info");
+	return $res;
+}
+
+
     }
     
     ?>

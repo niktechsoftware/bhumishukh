@@ -37,7 +37,49 @@ class loginmodel extends CI_Model{
 				"login_time" => date("H:i:s")
 			);
 			return $loginData;
-		} 
+		} else{
+
+		//$this->db->where("status",0);
+		$uid =$this->input->post("username");
+		$pass =$this->input->post("password");
+		$query =	$this->db->query("select * from agent_info where  password = '$pass' and (username='$uid' or email ='$uid')" );
+		
+			
+			if ($query->num_rows() > 0) {
+
+				$res = $query->row();
+			
+				$general = $this->db->get("general_settings");
+				$school = $general->row();
+				$loginData = array(
+					"business_name" => $school->business_name,
+					"login_type" => 2,
+					"customer_id" => $res->id,
+					"name" => $res->name,
+					"dob" => $res->dob,
+					//"image"=>$res->image,
+					//"photo"=>$res->image,
+					"customer_username" => $res->username,
+					"customer_password" => $res->password,
+					"mobile_number" => $res->mobile,
+					"currentaddress" => $res->address,
+					//"permanentaddress" => $res->permanent_address,
+					"city" => $res->city,
+					"state" => $res->state,
+					"pin" => $res->pin,
+					//"pan_number" => $res->pannumber,
+					//"adhaar_number" => $res->adhaarnumber,
+					"status" => $res->status,
+					"logo" => $school->logo,
+					"is_login" => true,
+					"is_lock" => true,
+					"login_date" => date("d-M-Y")
+					
+				);
+				return $loginData;
+			}
+		
+		}
 		
 	
     }
@@ -59,13 +101,13 @@ class loginmodel extends CI_Model{
     			return false;
     		}
     	}
-    	elseif($login_type == "student"){
+    	elseif($login_type == "agent"){
 
     	//	$this->db->where("school_code",$this->session->userdata("school_code"));
     		$this->db->where("status",1);
     		$this->db->where("username", $this->input->post("username"));
     		$this->db->where("password", $this->input->post("password"));
-    		$result = $this->db->get('student_info');
+    		$result = $this->db->get('agent_info');
     		if($result->num_rows() > 1){
     			return true;
     		}
