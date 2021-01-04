@@ -6,48 +6,26 @@
               
             </li>
             
-             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="user-check"></i><span>Personal</span></a>
+               <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="users"></i><span>Agent</span></a>
               <ul class="dropdown-menu">
-                   <li><a href="<?php echo base_url();?>index.php/clogin/customer_profile">View/Edit Profile</a></li>
-					<li><a href="<?php echo base_url();?>index.php/clogin/customer_profile">Bank Details</a></li>
-              </ul>
-            </li>
-			<li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="user-check"></i><span>Business</span></a>
-              <ul class="dropdown-menu">
-                  
-					<li><a href="<?php echo base_url();?>index.php/clogin/customer_profile">Total Business</a></li>
-					<li><a href="<?php echo base_url();?>index.php/clogin/customer_profile">Current Business</a></li>
-              </ul>
-            </li>
-              <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="mail"></i><span>Customer</span></a>
-              <ul class="dropdown-menu">
-               <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/cod/">List</a></li>
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/coupon/">Add New</a></li>
-				<li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/coupon/">Update KYC</a></li>
-               
-              </ul>
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agent_registration">Registration Form </a></li>
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agentCheckId">KYC Info</a></li>
+           <!-- <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agentList">Agent List</a></li>-->
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/agent_profile">Agent  Profile</a></li>
+          <li><a class="nav-link" href="<?php echo base_url();?>index.php/apanel/checkBusiness">Check Business</a></li>
+                 </ul>
             </li>
              <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i data-feather="mail"></i><span>Business</span></a>
+              <a href="#" class="nav-link has-dropdown"><i data-feather="user-plus"></i><span>Customer</span></a>
               <ul class="dropdown-menu">
-               <li><a class="nav-link" href="<?php echo base_url();?>index.php/Bill_controller/saleProduct">Over All</a></li>
-                <li><a class="nav-link" href="#">Agent Wise</a></li>
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/Bill_controller/sBillHistory">Customer Wise</a></li>
-              </ul>
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/customer/addCust">Add Customer</a></li>
+           <li><a class="nav-link" href="<?php echo base_url();?>index.php/customer/customerList">Search Customer</a></li>
+           </ul>
             </li>
-            
-          
-             <li class="dropdown">
-              	<a href="#" class="nav-link has-dropdown"><i data-feather="anchor"></i><span>SMS Panel</span></a>
-	              <ul class="dropdown-menu">
-	                	<li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/downline/1">Send SMS</a></li>
-	            </ul>
-            </li>
+           
 			 <li class="dropdown">
-              	<a href="#" class="nav-link has-dropdown"><i data-feather="anchor"></i><span>Logout</span></a>
+              	<a href="<?php echo base_url();?>index.php/welcome/index" class="nav-link has-dropdown"><i data-feather="anchor"></i><span>Logout</span></a>
 	            
             </li>
  

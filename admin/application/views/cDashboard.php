@@ -93,7 +93,6 @@
             <div class="col-12 col-sm-12 col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Achieve</h4>
                 </div>
                 <div class="card-body">
                   <div class="summary">

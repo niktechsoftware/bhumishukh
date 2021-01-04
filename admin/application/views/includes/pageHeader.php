@@ -58,7 +58,7 @@
                <?php if($this->session->userdata("login_type")==1){ ?>
                <a href="<?php echo base_url();?>index.php/adminController/admin_profile" class="dropdown-item has-icon"> <i class="far
 										fa-user"></i> Profile
-              </a> <?php }else{ ?><a href="<?php echo base_url();?>index.php/clogin/customer_profile" class="dropdown-item has-icon"> <i class="far
+              </a> <?php }else{ ?><a href="<?php echo base_url();?>index.php/apanel/agent_profile" class="dropdown-item has-icon"> <i class="far
 										fa-user"></i> Profile
               </a><?php }?>
               <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
