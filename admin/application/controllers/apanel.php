@@ -23,7 +23,18 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//		*******************************UPASANA CODE***************************************** 
 		
-
+		function acDetails(){
+	    $data['pageTitle'] = 'Account Details';
+		$data['smallTitle'] = 'Account Details';
+		$data['mainPage'] = 'Account Details';
+		$data['subPage'] = 'Account Details';
+		$data['title'] = 'Account Details';
+		$data['headerCss'] = 'headerCss/dashboardCss';
+		$data['footerJs'] = 'footerJs/customerJs';
+		$data['mainContent'] = 'acDetails';
+		$this->load->view("includes/mainContent", $data);
+	    
+	}
 	function commisionChart(){
 	    $data['pageTitle'] = 'Commision Chart';
 		$data['smallTitle'] = 'Commision Chart';

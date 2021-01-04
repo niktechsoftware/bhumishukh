@@ -27,7 +27,7 @@ class Clogin extends CI_Controller{
 		$data['smallTitle'] = 'Overview of all Section';
 		$data['mainPage'] = 'Dashboard';
 		$data['subPage'] = 'dashboard';
-		$data['title'] = 'UMPL Customer Dashboard';
+		$data['title'] = 'Customer Dashboard';
 		$data['headerCss'] = 'headerCss/nullCss';
 		$data['footerJs'] = 'footerJs/dashboardJs';
 		$data['mainContent'] = 'cDashboard';
